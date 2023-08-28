@@ -21,6 +21,7 @@ const TempApp = () => {
     return (
         <>
             <div className="box">
+                <h1 className='heading' > Weather App </h1>
                 <input type="search" className='inputFeild' value={value} onChange={(e) => setValue(e.target.value)} />
 
 
@@ -39,9 +40,9 @@ const TempApp = () => {
                             <h3> Min: {data?.main?.temp_min}°Cel | Max: {data?.main?.temp_max}°Cel </h3>
                         </div>
 
-                        <div className="wave-one"></div>    
-                        <div className="wave-two"></div>
-                        <div className="wave-three"></div>
+                        <div className="wave"></div>    
+                        <div className="wave two"></div>
+                        <div className="wave three"></div>
                     </> 
                 }
 

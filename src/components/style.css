@@ -6,16 +6,22 @@ body{
 
 .box{
     width: 400px;
-    height: 400px;
-    border-radius: 5px;
+    height: 500px;
+    border-radius: 50px;
     background: #A0B7DC;
     margin: auto;
     padding: 1rem;
-    margin-top: 15%;
+    margin-top: 7%;
     display: flex;
     flex-direction: column; 
     align-items: center;
     position: relative;
+}
+
+.heading{
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 1rem;
 }
 
 .inputFeild{
@@ -28,11 +34,12 @@ body{
 .info{
     display: flex;
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
     flex-direction: column; 
     justify-content: center;
     margin: auto;
     align-items: center; 
+    z-index: 99;
 }
 .location{
     display: flex;
@@ -55,16 +62,16 @@ body{
     transform-origin: 50% 48%;
     border-radius: 43%;
     animation: drift 3000ms infinite linear;
-    z-index: 1;
+    /* z-index: 1; */
 }
 .wave-three{
     animation: drift 5000ms infinite linear;
-    z-index: 2 !important;
+    /* z-index: 2 !important; */
     opacity: 0.2;
 }
 .wave-two{
     animation: drift 7000ms infinite linear;
-    z-index: 3 !important;
+    /* z-index: 3 !important; */
     opacity: 0.1;
 }
 
